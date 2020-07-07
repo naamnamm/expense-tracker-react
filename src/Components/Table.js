@@ -12,7 +12,7 @@ function Table(props) {
 
   let renderDefaultRow =
     <tr>
-      <td colSpan={5}>Add expense</td>
+      <td colSpan={5}>Add expense here</td>
     </tr>
 
   let tableContent = !props.expense.length ? renderDefaultRow : renderContent
