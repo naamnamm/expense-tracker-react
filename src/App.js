@@ -1,6 +1,6 @@
 import React from 'react';
 import './CSS/App.css';
-import Form from './Components/Form';
+import ExpenseForm from './Components/ExpenseForm';
 import Table from './Components/Table';
 
 class App extends React.Component {
@@ -63,7 +63,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">Expense-Tracker</header>
-        <Form
+        <ExpenseForm
           expense={this.state}
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}

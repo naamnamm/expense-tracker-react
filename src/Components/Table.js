@@ -23,16 +23,17 @@ function Table(props) {
 
   let renderTotal =
     <tr>
-      <td colSpan={4}>Total</td>
-      <td colSpan={1}>{total}</td>
+      <td colSpan={4} className="text-left">Total</td>
+      <td colSpan={1}>${total}</td>
     </tr>
+
 
   let totalRow = props.expense.length >= 1 ? renderTotal : null
 
   return (
-    <table className="table">
+    <table className="table table-bordered w-75 mx-auto">
 
-      <thead>
+      <thead className="thead-light">
         <TableHeader handleDelete={props.handleDelete} />
       </thead>
 
