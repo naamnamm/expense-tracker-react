@@ -5,8 +5,6 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 //if this is click - delete all the checked expenses
 
 function TableHeader(props) {
-  console.log(props)
-
   return (
     <tr>
       <th onClick={props.handleDelete}>
