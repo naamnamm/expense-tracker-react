@@ -12,8 +12,8 @@ function TableData(props) {
       <td>{props.expense.date}</td>
       <td>{props.expense.catagory}</td>
       <td>{props.expense.description}</td>
+      <td>{props.expense.location}</td>
       <td>${props.expense.amount}</td>
-
     </tr>
   )
 }

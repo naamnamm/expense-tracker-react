@@ -3,6 +3,7 @@ import './CSS/App.css';
 import ExpenseForm from './Components/ExpenseForm';
 import Table from './Components/Table';
 
+
 class App extends React.Component {
   constructor() {
     super();
@@ -10,6 +11,7 @@ class App extends React.Component {
       id: "",
       catagory: "",
       description: "",
+      location: "",
       amount: "",
       date: "",
       isChecked: "",
@@ -42,6 +44,7 @@ class App extends React.Component {
       id: Date.now(),
       catagory: this.state.catagory,
       description: this.state.description,
+      location: this.state.location,
       amount: this.state.amount,
       date: this.state.date,
       isChecked: false,
@@ -51,7 +54,7 @@ class App extends React.Component {
       id: "",
       catagory: "",
       description: "",
-      completed: "",
+      location: "",
       amount: "",
       date: "",
       isChecked: "",
@@ -62,7 +65,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">Expense-Tracker</header>
+
+        <header className="App-header font-weight-bold">Expense-Tracker</header>
+
         <ExpenseForm
           expense={this.state}
           handleSubmit={this.handleSubmit}
@@ -86,3 +91,4 @@ export default App;
     //   catagory: this.state.catagory,
     //   description: this.state.description,
     // })
+    //

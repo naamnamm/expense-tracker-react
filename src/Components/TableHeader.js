@@ -2,8 +2,6 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
-//if this is click - delete all the checked expenses
-
 function TableHeader(props) {
   return (
     <tr>
@@ -13,6 +11,7 @@ function TableHeader(props) {
       <th>Date</th>
       <th>Catagory</th>
       <th>Description</th>
+      <th>Location</th>
       <th>Amount</th>
     </tr>
   )

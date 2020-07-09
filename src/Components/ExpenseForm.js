@@ -3,9 +3,9 @@ import { Button, Form, Input, InputGroup, InputGroupText, Alert, Fade } from "re
 
 function ExpenseForm(props) {
   return (
-    <Form className="m-5 p-3 border border-dark" onSubmit={props.handleSubmit}>
+    <Form className="w-75 p-3 mx-auto my-4 border" onSubmit={props.handleSubmit}>
       <Fade in={true} mountOnEnter={true} unmountOnExit={true}>
-        <Alert>Add new item below:</Alert>
+        <Alert color="primary">Add new item below:</Alert>
       </Fade>
 
       <InputGroup className="w-75 mx-auto mb-2">
@@ -34,6 +34,12 @@ function ExpenseForm(props) {
       </InputGroup>
 
       <InputGroup className="w-75 mx-auto mb-2">
+        <InputGroupText className="col-4">Location:</InputGroupText>
+        <Input className="col-8 ml-2" name="location" type="text"
+          value={props.expense.location} onChange={props.handleChange} />
+      </InputGroup>
+
+      <InputGroup className="w-75 mx-auto mb-2">
         <InputGroupText className="col-4">Amount:</InputGroupText>
         <Input className="col-8 ml-2" name="amount" type="number" value={props.expense.amount}
           onChange={props.handleChange} required />
@@ -46,3 +52,4 @@ function ExpenseForm(props) {
 
 export default ExpenseForm
 
+//<Form className="m-5 p-3 border border-dark"
