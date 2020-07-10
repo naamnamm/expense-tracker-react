@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Ubuntu:wght@700&display=swap');
 .App {
   text-align: center;
 }
@@ -20,8 +21,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(15px + 2vmin);
+  letter-spacing: 2px;
   color: white;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .App-link {

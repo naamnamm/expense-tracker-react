@@ -4,6 +4,10 @@ import ExpenseForm from './Components/ExpenseForm';
 import Table from './Components/Table';
 
 
+// fix category spelling
+// save data to local storage?
+// deploy to heroku
+
 class App extends React.Component {
   constructor() {
     super();
@@ -36,7 +40,6 @@ class App extends React.Component {
     this.setState({ expenseData: updatedExpense })
   }
 
-
   handleSubmit = (e) => {
     e.preventDefault();
 
@@ -66,7 +69,7 @@ class App extends React.Component {
     return (
       <div className="App">
 
-        <header className="App-header font-weight-bold">Expense-Tracker</header>
+        <header className="App-header font-weight-bold">Expense Tracker</header>
 
         <ExpenseForm
           expense={this.state}
@@ -77,6 +80,7 @@ class App extends React.Component {
         <Table expense={this.state.expenseData}
           handleDelete={this.handleDelete}
           handleCheckbox={this.handleCheckbox} />
+
       </div>
     );
   }
