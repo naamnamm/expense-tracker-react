@@ -69,7 +69,7 @@ class App extends React.Component {
     return (
       <div className="App">
 
-        <header className="App-header font-weight-bold">Expense Tracker</header>
+        <header className="App-header font-weight-bold">Expense Tracker React</header>
 
         <ExpenseForm
           expense={this.state}
