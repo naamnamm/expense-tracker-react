@@ -1,4 +1,4 @@
-#Expense Tracker React
+# Expense Tracker React
 
 A simple expense tracker built with React/Node.js and Bootstrap/Reactstrap and deployed with Heroku.
 
@@ -14,9 +14,9 @@ This app is essentially built with class-based components with states and passin
 
 ## Built With
 
-- [React]
-- [NodeJS]
-- [Bootstrap] & [Reactstrap]
+- [React](https://reactjs.org/)
+- [NodeJS](https://nodejs.org/en/)
+- [Bootstrap](https://getbootstrap.com/) & [Reactstrap](https://reactstrap.github.io/)
 
 ## Deployment
 
