@@ -83,11 +83,4 @@ class App extends React.Component {
 
 export default App;
 
-    // let expense = [...this.state.expenseData]
 
-    // expense.push({
-    //   id: Date.now(),
-    //   category: this.state.category,
-    //   description: this.state.description,
-    // })
-    //
