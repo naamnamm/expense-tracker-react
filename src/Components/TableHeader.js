@@ -9,7 +9,7 @@ function TableHeader(props) {
         <FontAwesomeIcon icon={faTrashAlt} />
       </th>
       <th>Date</th>
-      <th>Catagory</th>
+      <th>Category</th>
       <th>Description</th>
       <th>Location</th>
       <th>Amount</th>

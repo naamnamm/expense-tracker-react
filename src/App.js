@@ -3,17 +3,12 @@ import './CSS/App.css';
 import ExpenseForm from './Components/ExpenseForm';
 import Table from './Components/Table';
 
-
-// fix category spelling
-// save data to local storage?
-// deploy to heroku
-
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       id: "",
-      catagory: "",
+      category: "",
       description: "",
       location: "",
       amount: "",
@@ -29,7 +24,7 @@ class App extends React.Component {
   }
 
   handleDelete = () => {
-    let filtered = this.state.expenseData.filter(item => !item.isChecked)
+    const filtered = this.state.expenseData.filter(item => !item.isChecked)
     this.setState({ expenseData: filtered })
   }
 
@@ -43,23 +38,23 @@ class App extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    let updatedExpense = this.state.expenseData.concat({
+    const updatedExpense = this.state.expenseData.concat({
       id: Date.now(),
-      catagory: this.state.catagory,
+      date: this.state.date,
+      category: this.state.category,
       description: this.state.description,
       location: this.state.location,
       amount: this.state.amount,
-      date: this.state.date,
       isChecked: false,
     })
 
     this.setState({
       id: "",
-      catagory: "",
+      date: "",
+      category: "",
       description: "",
       location: "",
       amount: "",
-      date: "",
       isChecked: "",
       expenseData: updatedExpense
     })
@@ -92,7 +87,7 @@ export default App;
 
     // expense.push({
     //   id: Date.now(),
-    //   catagory: this.state.catagory,
+    //   category: this.state.category,
     //   description: this.state.description,
     // })
     //

@@ -15,9 +15,9 @@ function ExpenseForm(props) {
       </InputGroup>
 
       <InputGroup className="w-75 mx-auto mb-2">
-        <InputGroupText className="col-4 text-light" style={{ backgroundColor: "#5ba4cf" }}>Catagory:</InputGroupText>
-        <Input className="col-8 ml-2" type="select" name="catagory"
-          value={props.expense.catagory} onChange={props.handleChange}>
+        <InputGroupText className="col-4 text-light" style={{ backgroundColor: "#5ba4cf" }}>Category:</InputGroupText>
+        <Input className="col-8 ml-2" type="select" name="category"
+          value={props.expense.category} onChange={props.handleChange}>
           <option value="select">--Please Select--</option>
           <option value="entertainment">Entertainment</option>
           <option value="food">Food</option>
@@ -53,4 +53,3 @@ function ExpenseForm(props) {
 export default ExpenseForm
 
 
-//style={{ backgroundColor: "skyblue" }}

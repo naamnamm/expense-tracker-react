@@ -7,12 +7,11 @@ function Table(props) {
   let renderContent = props.expense.map(item =>
     <TableData key={item.id} expense={item}
       handleDelete={props.handleDelete}
-      handleCheckbox={props.handleCheckbox}
-      render="expense" />)
+      handleCheckbox={props.handleCheckbox} />)
 
   let renderDefaultRow =
     <tr>
-      <td colSpan={6}>Add expense here</td>
+      <td colSpan={6}>New expense will be added here.</td>
     </tr>
 
   let tableContent = !props.expense.length ? renderDefaultRow : renderContent
@@ -26,7 +25,6 @@ function Table(props) {
       <td colSpan={5} className="text-left">Total</td>
       <td colSpan={1}>${total}</td>
     </tr>
-
 
   let totalRow = props.expense.length >= 1 ? renderTotal : null
 
